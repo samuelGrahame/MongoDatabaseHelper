@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>MongoDatabaseHelper</id>
+    <version>1.0.0</version>
+    <title>Mongo Database Helper - Simple Helper for Business Objects</title>
+    <authors>Intelogy Group</authors>
+    <owners>Intelogy Group</owners>
+    <projectUrl>http://www.intelogy.com.au</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MongoDatabaseHelper - Allows for Easy Business Object Design</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>c# mongodb mongo business objects</tags>
+	<dependencies>
+		<dependency id="MongoDB.Bson" version="[2.4.3]"/>
+		<dependency id="MongoDB.Driver" version="[2.4.3]"/>
+		<dependency id="MongoDB.Driver.Core" version="[2.4.3]"/>		
+	  </dependencies>
+  </metadata>
+  <files>
+	<file src="bin\Release\MongoDatabaseHelper.dll" target="lib\MongoDatabaseHelper.dll" />	
+  </files>
+ 
+</package>
