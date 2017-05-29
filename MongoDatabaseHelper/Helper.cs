@@ -13,7 +13,7 @@ namespace MongoDatabaseHelper
         public static List<Type> RegisterClassTypes = new List<Type>();
         public static string ConnectionString;
         public static string Database;
-        public static List<DataService<BObjectWithId>> RegisteredServices = new List<DataService<BObjectWithId>>();
+        public static List<object> RegisteredServices = new List<object>();
 
         public static void Register(string connectionString, string database)
         {
@@ -65,7 +65,7 @@ namespace MongoDatabaseHelper
             {
                 BsonClassMap.RegisterClassMap<TClass>();
             }
-            RegisteredServices.Add(new DataService<TClass>(ConnectionString, Database) as DataService<BObjectWithId>);
+            RegisteredServices.Add(new DataService<TClass>(ConnectionString, Database));
         }
     }
 
